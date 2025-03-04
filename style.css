@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Контейнер меню */
+ul {
+    font-family: 'Montserrat';
+    background-color: #adc;
+    display: flex;
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+}
+/* Элементы списка */
+li {
+    font-size: calc(1.8vw);
+    text-align: center;
+    display: inline-block;
+    width: calc(100% / 6);
+    padding: 20px;
+    cursor: pointer;
+}
+/* Цвет фона для первых трёх кнопок */
+li:nth-child(-n+3) {
+    background-color: #797;
+}
+/* Каждой второй кнопке задаем стили */
+li:nth-child(even) {
+    font-weight: bold;
+    color: #133;
+}
+/* Цвет шрифта для всех элементов */
+li {
+    color: #000; /* Цвет шрифта по умолчанию */
+}
